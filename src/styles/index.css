@@ -10,6 +10,7 @@
   --button-primary-active: #1565c0;
   --button-secundary-hover: #e65100;
   --button-secundary-active: #bf360c;
+  --button-secundary-disabled: #eee;
   --white: #fff;
 }
 
@@ -65,7 +66,7 @@ header {
 h1 {
   font-size: 1.5rem;
   line-height: 150%;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 h2 {
@@ -84,7 +85,7 @@ button {
   font-size: 0.875rem;
   line-height: 125%;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 700;
   padding: 0.875rem 1rem;
   border-radius: 0.5rem;
   color: var(--white);
@@ -92,6 +93,7 @@ button {
   cursor: pointer;
   transition: all 0.5s;
   letter-spacing: 1px;
+  font-family: "Inter", sans-serif;
 }
 
 .btnPrimary {
@@ -106,6 +108,12 @@ button {
   background-color: var(--button-primary-active);
 }
 
+.btnPrimary.disabled {
+  background-color: var(--border-accent);
+  color: var(--main-text);
+  cursor: not-allowed;
+}
+
 .btnSecundary {
   background-color: var(--secundary);
 }
@@ -116,6 +124,12 @@ button {
 
 .btnSecundary.active {
   background-color: var(--button-secundary-active);
+}
+
+.btnSecundary.disabled {
+  background-color: var(--button-secundary-disabled);
+  color: var(--main-text);
+  cursor: not-allowed;
 }
 
 .content {
@@ -132,7 +146,7 @@ button {
 .show-itens h3 {
   font-size: 4rem;
   line-height: 100%;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .show-itens p {
@@ -151,3 +165,47 @@ footer p {
   line-height: 125%;
 }
 
+@media (width >= 768px) {
+  header {
+    top: 32px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 100%;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    line-height: 100%;
+  }
+
+  .btns {
+    flex-direction: row;
+  }
+
+  .btns button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 150%;
+  }
+
+  .show-itens h3 {
+    font-size: 8rem;
+  }
+
+  .show-itens p {
+    font-size: 1.75rem;
+    line-height: 125%;
+  }
+
+  footer {
+    bottom: 32px;
+  }
+
+  footer p {
+    font-size: 0.875rem;
+    line-height: 125%;
+  }
+}
