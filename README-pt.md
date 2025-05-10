@@ -40,7 +40,7 @@ click-counter/
 ---
 
 ## 📸 Preview
-🔗 [Link para o projeto em produção ](https://click-counter-eight.vercel.app/)
+🔗 [Link para o projeto em produção ](https://click-counter-eight.vercel.app/) <br>
 ![Prévia do projeto - versão celular](./src/screenshots/preview-mobile.png)
 ![Prévia do projeto - versão computador](./src/screenshots/preview-desktop.png)
 

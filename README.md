@@ -39,7 +39,7 @@ click-counter/
 ---
 
 ## 📸 Preview
-🔗 [Link para o projeto em produção ](https://click-counter-eight.vercel.app/)
+🔗 [Link para o projeto em produção ](https://click-counter-eight.vercel.app/)<br>
 ![Project preview - mobile version ](./src/screenshots/preview-mobile.png)
 ![Project preview - desktop version](./src/screenshots/preview-desktop.png)
 
@@ -70,7 +70,6 @@ Abra o arquivo  no seu navegador
 
 > That's it! No back-end, no dependecies.
 
----
 
 ---
 
