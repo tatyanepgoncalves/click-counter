@@ -1,0 +1,153 @@
+:root {
+  --primary: #1e90ff;
+  --secundary: #ff6f00;
+  --light-bg: #f4f4f4;
+  --main-text: #333;
+  --border-accent: #ccc;
+  --sucess: #4caf50;
+  --erro: #ff4c4c;
+  --button-primary-hover: #1c86ee;
+  --button-primary-active: #1565c0;
+  --button-secundary-hover: #e65100;
+  --button-secundary-active: #bf360c;
+  --white: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--main-text);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+header, main, footer {
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 16px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 150%;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+button {
+  font-size: 0.875rem;
+  line-height: 125%;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 0.875rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  letter-spacing: 1px;
+}
+
+.btnPrimary {
+  background-color: var(--primary);
+}
+
+.btnPrimary:hover {
+  background-color: var(--button-primary-hover);
+}
+
+.btnPrimary.active {
+  background-color: var(--button-primary-active);
+}
+
+.btnSecundary {
+  background-color: var(--secundary);
+}
+
+.btnSecundary:hover {
+  background-color: var(--button-secundary-hover);
+}
+
+.btnSecundary.active {
+  background-color: var(--button-secundary-active);
+}
+
+.content {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.show-itens {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.show-itens h3 {
+  font-size: 4rem;
+  line-height: 100%;
+  font-weight: 800;
+}
+
+.show-itens p {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 125%;
+}
+
+footer {
+  position: fixed;
+  bottom: 16px;
+}
+
+footer p {
+  font-size: 0.75rem;
+  line-height: 125%;
+}
+
